@@ -18,7 +18,7 @@ const Left = styled.div`
 const Title = styled.text`
     font-style: normal;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 20px;
     text-align: center;
     color: #202020;
 `;
@@ -31,7 +31,7 @@ const Right = styled.div`
 `;
 
 const Image = styled.img`
-    width: 20px;
+    width: 30px;
     height: auto;
     margin-right: 10px;
 `

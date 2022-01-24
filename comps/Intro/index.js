@@ -11,7 +11,7 @@ const Cont = styled.div`
 const IntroSec = styled.div`
     display: flex;
     flex-direction: column;
-    width: 475px;
+    width: 560px;
     text-align: center;
     margin-top: 40px;
     margin-bottom: 200px;
@@ -19,12 +19,12 @@ const IntroSec = styled.div`
 
 const Title = styled.text`
     font-weight: bold;
-    font-size: 16px;
+    font-size: 18px;
     margin-bottom: 10px;
 `
 
 const Text = styled.text`
-    font-size: 14px;
+    font-size: 16px;
     line-height: 22px;
 `
 

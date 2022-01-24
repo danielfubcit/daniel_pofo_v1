@@ -6,26 +6,26 @@ const Cont = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 250px;
+    width: 300px;
     background: #3F3F3F;
     border: 1px solid #8B8B8B;
     box-sizing: border-box;
     border-radius: 50px;
     color: #FFFFFF;
     text-align: center;
-    font-size: 12px;
+    font-size: 14px;
     position: relative;
-    top:-150px
+    top:-150px;
 `;
 
 const Top = styled.div`
     margin-top: 30px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 `
 
 const MainTitle = styled.text`
     font-weight: bold;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 30px;
     margin-bottom: 20px;
 `
@@ -33,24 +33,24 @@ const MainTitle = styled.text`
 const Bot = styled.div`
     display: flex;
     flex-direction: column;
-    width: 200px;
+    width: 260px;
     margin-bottom: 30px;
 `
 
 const MainText = styled.text`
-    line-height: 20px;
+    line-height: 24px;
     margin-bottom: 20px;
 `
 
 const SubTitle = styled.text`
     font-weight: bold;
-    font-size: 14px;
+    font-size: 16px;
     color: #FFDF6C;
     margin-bottom: 20px;
 `
 
 const SubText = styled.text`
-    line-height: 20px;
+    line-height: 24px;
 `
 
 const Card = ({
