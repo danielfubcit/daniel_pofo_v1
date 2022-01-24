@@ -25,7 +25,7 @@ const Title = styled.text`
 
 const Text = styled.text`
     font-size: 16px;
-    line-height: 22px;
+    line-height: 24px;
 `
 
 const Intro = ({

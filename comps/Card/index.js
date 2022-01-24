@@ -6,7 +6,7 @@ const Cont = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 300px;
+    width: 320px;
     background: #3F3F3F;
     border: 1px solid #8B8B8B;
     box-sizing: border-box;
