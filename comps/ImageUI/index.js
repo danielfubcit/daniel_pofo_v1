@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import Link from 'next/dist/client/link';
 
 const Cont = styled.div`
     display: flex;
@@ -12,20 +11,13 @@ const Image = styled.img`
     height: auto;
 `
 
-const Icon = ({
+const ImageUI = ({
     src='/Daniel_with_laptop.png',
     width='200px',
-    link='',
-    target=''
 }) => {
-
     return <Cont>
-        <Link href={link}>
-            <a target={target}>
-                <Image src={src} width={width}/>
-            </a>
-        </Link>
+        <Image src={src} width={width}/>
     </Cont>
 }
 
-export default Icon;
+export default ImageUI;

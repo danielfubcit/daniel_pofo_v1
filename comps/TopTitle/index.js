@@ -26,7 +26,7 @@ const Name = styled.text`
 const Title = styled.text``
 
 const Bot = styled.text`
-    font-size: 18px;
+    font-size: 16px;
     margin-top: 20px;
 `
 
@@ -39,7 +39,7 @@ const TopTitle = ({
              <Name>DANIEL FU</Name>
              <Title>Front-end Developer</Title>
          </Top>
-         <Bot>I love to code cool looking stuff, and it is a wonderful thing.</Bot>
+         <Bot>Able to create your own world via coding is a wonderful thing.</Bot>
     </Cont>
 }
 

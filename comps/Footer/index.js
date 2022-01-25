@@ -4,58 +4,58 @@ import Icon from '../Icon';
 
 const Cont = styled.div`
     display: flex;
-    align-items: center;
-    background: #FFDF6C;
-    border-radius: 0px 0px 50px 50px;
-    padding: 8px 0px;
 `;
 
-const Left = styled.div`
+const Background = styled.div`
     display: flex;
-    flex:1;
-    margin-left: 30px;
-`;
-
-const Title = styled.text`
-    font-style: normal;
-    font-weight: bold;
-    font-size: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 100%;
+    background-color: #FFDF6C;
     text-align: center;
     color: #202020;
-`;
+    font-weight: bold;
+`
 
-const Right = styled.div`
-    display: flex;
-    justify-content: flex-end;
-    flex:1;
-    margin-right: 30px;
-`;
+const Title = styled.text`
+    font-size: 24px;
+    line-height: 36px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+`
+
+const Subtitle = styled.text`
+    font-size: 18px;
+    line-height: 27px;
+`
 
 const IconSec = styled.div`
     display: flex;
     flex-direction: row;
-    width: 180px;
+    width: 220px;
     justify-content: space-between;
+    margin: 20px 0px;
 `
 
-const NavBar = ({
+const Footer = ({
     src='/github.png',
-    width='35px'
+    width='40px',
 }) => {
-
     return <Cont>
-         <Left>
-             <Title>Daniel Fu</Title>
-         </Left>
-         <Right>
+        <Background>
+            <Title>Daniel Fu</Title>
+            <Subtitle>Front-end Developer</Subtitle>
             <IconSec>
                 <Icon src={src} width={width} link='https://github.com/danielfubcit' target='_blank'/>
                 <Icon src='/linkedin.png' width={width} link='https://www.linkedin.com/in/danielfu-/' target='_blank'/>
                 <Icon src='/youtube.png' width={width} link='https://www.youtube.com/c/DanielFuGaming' target='_blank'/>
                 <Icon src="/email.png" width={width} link='mailto:danielfuyj@outlook.com' target='_blank'/>
             </IconSec>
-         </Right>
+            
+        </Background>
     </Cont>
 }
 
-export default NavBar;
+export default Footer;

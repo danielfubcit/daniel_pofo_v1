@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Icon from '../Icon';
+import ImageUI from '../ImageUI';
 
 const Cont = styled.div`
     display: flex;
@@ -15,7 +15,7 @@ const Cont = styled.div`
     text-align: center;
     font-size: 14px;
     position: relative;
-    top:-150px;
+    top:-120px;
 `;
 
 const Top = styled.div`
@@ -62,11 +62,12 @@ const Card = ({
     subText3="JavaScript",
     subText4="React",
     subText5="React Native",
-    src='/webdev.png'
+    src='/webdev.png',
+    width="65px"
 }) => {
     return <Cont>
         <Top>
-            <Icon src={src} width='50px'/>
+            <ImageUI src={src} width={width}/>
         </Top>
         <MainTitle>{mainTitle}</MainTitle>
         <Bot>

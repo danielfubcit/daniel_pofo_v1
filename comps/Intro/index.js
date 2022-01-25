@@ -14,13 +14,13 @@ const IntroSec = styled.div`
     width: 560px;
     text-align: center;
     margin-top: 40px;
-    margin-bottom: 200px;
+    margin-bottom: 180px;
 `
 
 const Title = styled.text`
     font-weight: bold;
-    font-size: 18px;
-    margin-bottom: 10px;
+    font-size: 20px;
+    margin-bottom: 20px;
 `
 
 const Text = styled.text`
