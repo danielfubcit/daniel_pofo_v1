@@ -34,7 +34,7 @@ const Intro = ({
         <IntroSec>
             <Title>Hello, I am Daniel. Great to see you here.</Title>
             <Text>
-                I am a web developer and I have been studying for a diploma in web development, UX/UI research, and web design at BCIT for more than 1 year. I have a full understanding of Adobe Creative Suite like illustrator photoshop, and premiere pro and am also proficient in prototyping tools such as Figma. I am a flexible, patient, and helpful person.
+            I am a front-end developer and am experienced in UX design. I graduated from BCIT D3 Program. Eager and motivated to apply my expertise in building responsive, elegant, and engaging-friendly web applications. Work in JavaScript, Node.js or frameworks such as React and skilled in UI Development technologies such as HTML, CSS, JSON and API usage.
             </Text>
         </IntroSec>
     </Cont>

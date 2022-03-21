@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import styled from 'styled-components';
-import React, {useState}  from 'react';
+import React, {useState, useRef}  from 'react';
 import NavBar from '@/comps/NavBar';
 import TopTitle from '@/comps/TopTitle';
 import ImageUI from '@/comps/ImageUI';
@@ -10,6 +10,7 @@ import SecTitle from '@/comps/SecTitle';
 import Project from '@/comps/Project';
 import Button from '@/comps/Button';
 import Footer from '@/comps/Footer';
+import Arrow from '@/comps/Arrow';
 
 const HomeCont = styled.div`
   margin:0;
@@ -33,28 +34,73 @@ const HomeCont = styled.div`
     flex-direction: row;
   }
 
+  .projects-sec{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .arrow-left{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 1;
+  }
+
+  .arrow-right{
+    display: flex;
+    align-items: center;
+    flex: 1;
+  }
+
+  .projects{
+    display: flex;
+    flex: 5;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+
   .contactSec{
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    margin-top: 50px;
+    align-items: center;
+    margin-top: 80px;
     margin-bottom: 80px;
   }
 `;
 
 export default function Home() {
+
+  const ref = useRef(null);
+  const ref2 = useRef(null);
+
+  const scroll = (scrollOffset) => {
+    ref.current.scrollLeft += scrollOffset;
+  };
+
+  const scroll2 = (scrollOffset2) => {
+    ref2.current.scrollLeft += scrollOffset2;
+  };
+
   return <HomeCont>
     <Head>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Poppins&display=optional"
-          rel="stylesheet"
-        />
+      <title>Daniel Fu | Front-End Developer | BCIT D3 Web Development 2022</title>
+      <link rel="shortcut icon" href="/Daniel_with_laptop.png" />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Poppins&display=optional"
+        rel="stylesheet"
+      />
       </Head>
+
     <NavBar/>
+
     <div className='hero'>
       <TopTitle/>
       <ImageUI/>
     </div>
+
     <Intro/>
+
     <div className='cardSec'>
       <Card/>
       <Card mainTitle='UX/UI Designer'
@@ -77,13 +123,56 @@ export default function Home() {
       src='/videoedit.png'
       width='70px'/>
     </div>
+
     <SecTitle/>
-    <Project src='/reshareWeb.png' width='300px'/>
-    <Project link='https://mdia-2109-final.vercel.app/' src='/co2_app.png' width='300px' title='CO2 Calculator App' text1='The CO2Calculator app is an application designed to inform and educate users of carbon emissions, its effects on the environment, as well as ways to reduce the amount of carbon emissions produced by the user by providing them with tips and suggestions based on their determined emission rate.' text2=''/>
-    <SecTitle title='Want to get in touch?' text='It is a pleasure to have a chance to work with different people. I am always open to any opportunities.'/>
+
+    <div className='projects-sec'>
+      <div className='arrow-left'>
+        <Arrow click={() => scroll(-(screen.width*0.72))}/>
+      </div>
+      <div className='projects' ref={ref}>
+        <div>
+        <Project src='/reshareWeb.png' width='300px'/>
+        </div>
+        <div>
+        <Project link='https://mdia-2109-final.vercel.app/' src='/co2_app.png' width='300px' title='CO2 Calculator App' text1='The CO2Calculator app is an application designed to inform and educate users of carbon emissions, its effects on the environment, as well as ways to reduce the amount of carbon emissions produced by the user by providing them with tips and suggestions based on their determined emission rate.' text2=''/>
+        </div>
+        <div>
+        <Project link='https://mdia-2109-final.vercel.app/' src='/co2_app.png' width='300px' title='CO2 Calculator App' text1='The CO2Calculator app is an application designed to inform and educate users of carbon emissions, its effects on the environment, as well as ways to reduce the amount of carbon emissions produced by the user by providing them with tips and suggestions based on their determined emission rate.' text2=''/>
+        </div>
+      </div>
+      <div className='arrow-right'>
+        <Arrow src='/next.png' click={() => scroll((screen.width*0.72))}/>
+      </div>
+    </div>
+
+    <SecTitle title='UX/UI Design' text='Checkout my design projects down below.'/>
+
+    <div className='projects-sec'>
+      <div className='arrow-left'>
+        <Arrow click={() => scroll2(-(screen.width*0.72))}/>
+      </div>
+      <div className='projects' ref={ref2}>
+        <div>
+        <Project src='/reshareWeb.png' width='300px'/>
+        </div>
+        <div>
+        <Project link='https://mdia-2109-final.vercel.app/' src='/co2_app.png' width='300px' title='CO2 Calculator App' text1='The CO2Calculator app is an application designed to inform and educate users of carbon emissions, its effects on the environment, as well as ways to reduce the amount of carbon emissions produced by the user by providing them with tips and suggestions based on their determined emission rate.' text2=''/>
+        </div>
+        <div>
+        <Project link='https://mdia-2109-final.vercel.app/' src='/co2_app.png' width='300px' title='CO2 Calculator App' text1='The CO2Calculator app is an application designed to inform and educate users of carbon emissions, its effects on the environment, as well as ways to reduce the amount of carbon emissions produced by the user by providing them with tips and suggestions based on their determined emission rate.' text2=''/>
+        </div>
+      </div>
+      <div className='arrow-right'>
+        <Arrow src='/next.png' click={() => scroll2((screen.width*0.72))}/>
+      </div>
+    </div>
+
     <div className='contactSec'>
+      <SecTitle title='Want to get in touch?' text='It is a pleasure to have a chance to work with different people. I am always open to any opportunities.'/>
       <Button/>
     </div>
+
     <Footer/>
   </HomeCont>
 }

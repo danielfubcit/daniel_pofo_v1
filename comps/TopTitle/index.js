@@ -37,7 +37,7 @@ const TopTitle = ({
     return <Cont>
          <Top>
              <Name>DANIEL FU</Name>
-             <Title>Front-end Developer</Title>
+             <Title>Front-End Developer</Title>
          </Top>
          <Bot>Able to create your own world via coding is a wonderful thing.</Bot>
     </Cont>

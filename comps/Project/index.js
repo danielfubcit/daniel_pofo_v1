@@ -9,17 +9,23 @@ const Cont = styled.div`
     color: #202020;
     align-items: center;
     justify-content: space-evenly;
+    height: 400px;
+    width: 72vw;
 `;
 
-const Left = styled.div``
+const Left = styled.div`
+    display: flex;
+    justify-content: center;
+    width:350px;
+`
 
 const Right = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width:450px;
     height: 400px;
     text-align: left;
+    width: 400px;
 `
 
 const Title = styled.text`

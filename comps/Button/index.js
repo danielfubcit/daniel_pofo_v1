@@ -8,6 +8,7 @@ const Cont = styled.div`
     width: 130px;
     background-color: #707070;
     border-radius: 20px;
+    margin-top: 50px;
 `;
 
 const ButtonCont = styled.div`

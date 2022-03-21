@@ -23,7 +23,7 @@ const Text = styled.text`
 `
 
 const SecTitle = ({
-    title='My Recent Work',
+    title='Web Development',
     text='Checkout my web/app projects down below.'
 }) => {
     return <Cont>
