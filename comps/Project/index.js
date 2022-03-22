@@ -48,7 +48,9 @@ const Project = ({
     src,
     width,
     target='_blank',
-    link='https://reshare-gold.vercel.app/'
+    link='https://reshare-gold.vercel.app/',
+    projectlink='project/reshare',
+    butText='View Site'
 }) => {
     return <Cont>
         <Left>
@@ -57,8 +59,8 @@ const Project = ({
         <Right>
             <Title>{title}</Title>
             <ButtonCont>
-                <Button text="View Site" link={link}/>
-                <Button text="View Project" link='project/reshare' target=''/>
+                <Button text={butText} link={link}/>
+                <Button text="View Project" link={projectlink} target=''/>
             </ButtonCont>
         </Right>
     </Cont>

@@ -76,7 +76,7 @@ export default function ReshareProject() {
         <ProjectCard 
         text='Front-end Developer'
         text2='Map API testing and research on the app'
-        text3='Using Next JS to Build Reshare’s website'
+        text3='Using Next JS to build Reshare’s website'
         />
         <ProjectCard mainTitle='Problem & Solution'/>
     </div>

@@ -108,24 +108,24 @@ export default function Home() {
     <div className='cardSec'>
       <Card/>
       <Card mainTitle='UX/UI Designer'
-      mainText='Having a good user interface and user experience is important, and I always try my best to provide the best-looking user-friendly websites.'
-      subTitle='Design tools I use:'
-      subText1='Figma'
-      subText2='WordPress'
-      subText3='Photoshop'
-      subText4='Illustrator'
-      subText5='InDesign'
-      src='/graphic-design.png'/>
+        mainText='Having a good user interface and user experience is important, and I always try my best to provide the best-looking user-friendly websites.'
+        subTitle='Design tools I use:'
+        subText1='Figma'
+        subText2='WordPress'
+        subText3='Photoshop'
+        subText4='Illustrator'
+        subText5='InDesign'
+        src='/graphic-design.png'/>
       <Card mainTitle='Video Editor'
-      mainText='Making videos is FUN. 6 years ago, I made my very first YouTube video. I currently have about 1k subscribers on my YouTube Channel, and I post gaming videos.'
-      subTitle='Video editing tool I use:'
-      subText1='Premiere Pro'
-      subText2='After Effects'
-      subText3='Audition'
-      subText4='YouTube Studio'
-      subText5=''
-      src='/videoedit.png'
-      width='70px'/>
+        mainText='Making videos is FUN. 6 years ago, I made my very first YouTube video. I currently have about 1k subscribers on my YouTube Channel, and I post gaming videos.'
+        subTitle='Video editing tool I use:'
+        subText1='Premiere Pro'
+        subText2='After Effects'
+        subText3='Audition'
+        subText4='YouTube Studio'
+        subText5=''
+        src='/videoedit.png'
+        width='70px'/>
     </div>
 
     <SecTitle/>
@@ -139,10 +139,12 @@ export default function Home() {
         <Project src='/reshareWeb.png' width='300px'/>
         </div>
         <div>
-        <Project link='https://mdia-2109-final.vercel.app/' src='/co2_app.png' width='300px' title='CO2 Calculator App' text1='The CO2Calculator app is an application designed to inform and educate users of carbon emissions, its effects on the environment, as well as ways to reduce the amount of carbon emissions produced by the user by providing them with tips and suggestions based on their determined emission rate.' text2=''/>
-        </div>
-        <div>
-        <Project link='https://mdia-2109-final.vercel.app/' src='/co2_app.png' width='300px' title='CO2 Calculator App' text1='The CO2Calculator app is an application designed to inform and educate users of carbon emissions, its effects on the environment, as well as ways to reduce the amount of carbon emissions produced by the user by providing them with tips and suggestions based on their determined emission rate.' text2=''/>
+        <Project link='https://mdia-2109-final.vercel.app/' 
+          projectlink='/project/co2Calculator' 
+          butText="View App"
+          src='/co2_app.png' 
+          width='300px' 
+          title='CO2 Calculator App'/>
         </div>
       </div>
       <div className='arrow-right'>
@@ -158,13 +160,20 @@ export default function Home() {
       </div>
       <div className='projects' ref={ref2}>
         <div>
-        <Project src='/reshareWeb.png' width='300px'/>
+        <Project link='https://www.figma.com/file/Y0Y5UdQI1J11WJ7S0rD9Hw/VanProtect?node-id=9%3A398' 
+          projectlink='/project/vanProtect' 
+          butText="View Site"
+          src='/vanProtectMac.png' 
+          width='300px' 
+          title='VanProtect'/>
         </div>
         <div>
-        <Project link='https://mdia-2109-final.vercel.app/' src='/co2_app.png' width='300px' title='CO2 Calculator App' text1='The CO2Calculator app is an application designed to inform and educate users of carbon emissions, its effects on the environment, as well as ways to reduce the amount of carbon emissions produced by the user by providing them with tips and suggestions based on their determined emission rate.' text2=''/>
-        </div>
-        <div>
-        <Project link='https://mdia-2109-final.vercel.app/' src='/co2_app.png' width='300px' title='CO2 Calculator App' text1='The CO2Calculator app is an application designed to inform and educate users of carbon emissions, its effects on the environment, as well as ways to reduce the amount of carbon emissions produced by the user by providing them with tips and suggestions based on their determined emission rate.' text2=''/>
+        <Project link='https://mdia-2109-final.vercel.app/' 
+          projectlink='/project/co2Calculator' 
+          butText="View App"
+          src='/co2_app.png' 
+          width='300px' 
+          title='CO2 Calculator App'/>
         </div>
       </div>
       <div className='arrow-right'>
