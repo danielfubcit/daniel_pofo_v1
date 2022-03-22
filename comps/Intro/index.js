@@ -11,7 +11,7 @@ const Cont = styled.div`
 const IntroSec = styled.div`
     display: flex;
     flex-direction: column;
-    width: 560px;
+    width: ${props=>props.width};
     text-align: center;
     margin-top: 40px;
     margin-bottom: 180px;
@@ -29,13 +29,18 @@ const Text = styled.text`
 `
 
 const Intro = ({
+    title="Hello, I am Daniel. Great to see you here.",
+    info="I am a front-end developer and am experienced in UX design. I graduated from BCIT D3 Program. Eager and motivated to apply my expertise in building responsive, elegant, and engaging-friendly web applications. Work in JavaScript, Node.js or frameworks such as React and skilled in UI Development technologies such as HTML, CSS, JSON and API usage.",
+    info2='',
+    info3='',
+    width="530px"
 }) => {
     return <Cont>
-        <IntroSec>
-            <Title>Hello, I am Daniel. Great to see you here.</Title>
-            <Text>
-            I am a front-end developer and am experienced in UX design. I graduated from BCIT D3 Program. Eager and motivated to apply my expertise in building responsive, elegant, and engaging-friendly web applications. Work in JavaScript, Node.js or frameworks such as React and skilled in UI Development technologies such as HTML, CSS, JSON and API usage.
-            </Text>
+        <IntroSec width={width}>
+            <Title>{title}</Title>
+            <Text>{info}</Text>
+            <Text>{info2}</Text>
+            <Text>{info3}</Text>
         </IntroSec>
     </Cont>
 }

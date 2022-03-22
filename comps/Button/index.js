@@ -8,7 +8,6 @@ const Cont = styled.div`
     width: 130px;
     background-color: #707070;
     border-radius: 20px;
-    margin-top: 50px;
 `;
 
 const ButtonCont = styled.div`
@@ -27,12 +26,17 @@ const ButtonText = styled.text`
 `
 
 const Button = ({
+    link="mailto:danielfuyj@outlook.com",
+    text="Contact me",
+    target="_blank"
 }) => {
     return <Cont>
-        <Link href="mailto:danielfuyj@outlook.com">
-            <ButtonCont>
-                <ButtonText>Contact me</ButtonText>
-            </ButtonCont>
+        <Link href={link}>
+            <a target={target}>
+                <ButtonCont>
+                    <ButtonText>{text}</ButtonText>
+                </ButtonCont>
+            </a>
         </Link>
     </Cont>
 }

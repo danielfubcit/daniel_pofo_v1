@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Icon from '../Icon';
+import Link from 'next/dist/client/link';
 
 const Cont = styled.div`
     display: flex;
@@ -42,10 +43,11 @@ const NavBar = ({
     src='/github.png',
     width='35px'
 }) => {
-
     return <Cont>
          <Left>
-             <Title>Daniel Fu</Title>
+            <Link href='/'>
+                <Title>Daniel Fu</Title>
+            </Link>
          </Left>
          <Right>
             <IconSec>

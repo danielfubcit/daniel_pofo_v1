@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Icon from '../Icon';
+import Button from '../Button';
 
 const Cont = styled.div`
     display: flex;
@@ -23,6 +24,7 @@ const Right = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     height: 400px;
     text-align: left;
     width: 400px;
@@ -34,16 +36,15 @@ const Title = styled.text`
     line-height: 44px;
 `
 
-const Text = styled.text`
-    margin-top: 20px;
-    font-size: 14px;
-    line-height: 24px;
+const ButtonCont = styled.div`
+    display:flex;
+    justify-content: space-around;
+    width:310px;
+    margin-top: 10px;
 `
 
 const Project = ({
-    title='Reshare’s CMS Website',
-    text1='Reshare is a grocery app that lets grocery stores sell excess inventory at a discounted price, while helping lower-income individuals have access to quality ingredients.',
-    text2='The Reshare website showcase the project process, team members, and marketing products.',
+    title='Reshare Website & App',
     src,
     width,
     target='_blank',
@@ -55,8 +56,10 @@ const Project = ({
         </Left>
         <Right>
             <Title>{title}</Title>
-            <Text>{text1}</Text>
-            <Text>{text2}</Text>
+            <ButtonCont>
+                <Button text="View Site" link={link}/>
+                <Button text="View Project" link='project/reshare' target=''/>
+            </ButtonCont>
         </Right>
     </Cont>
 }

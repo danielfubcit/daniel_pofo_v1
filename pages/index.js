@@ -39,6 +39,13 @@ const HomeCont = styled.div`
     flex-direction: row;
   }
 
+  .projects{
+    display: flex;
+    flex: 5;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+
   .arrow-left{
     display: flex;
     align-items: center;
@@ -52,13 +59,6 @@ const HomeCont = styled.div`
     flex: 1;
   }
 
-  .projects{
-    display: flex;
-    flex: 5;
-    overflow-x: hidden;
-    scroll-behavior: smooth;
-  }
-
   .contactSec{
     display: flex;
     flex-direction: column;
@@ -66,6 +66,10 @@ const HomeCont = styled.div`
     align-items: center;
     margin-top: 80px;
     margin-bottom: 80px;
+  }
+
+  .contactButton{
+    margin-top: 30px;
   }
 `;
 
@@ -128,7 +132,7 @@ export default function Home() {
 
     <div className='projects-sec'>
       <div className='arrow-left'>
-        <Arrow click={() => scroll(-(screen.width*0.72))}/>
+        <Arrow click={() => scroll(-(screen.width*0.7))}/>
       </div>
       <div className='projects' ref={ref}>
         <div>
@@ -142,7 +146,7 @@ export default function Home() {
         </div>
       </div>
       <div className='arrow-right'>
-        <Arrow src='/next.png' click={() => scroll((screen.width*0.72))}/>
+        <Arrow src='/next.png' click={() => scroll((screen.width*0.7))}/>
       </div>
     </div>
 
@@ -150,7 +154,7 @@ export default function Home() {
 
     <div className='projects-sec'>
       <div className='arrow-left'>
-        <Arrow click={() => scroll2(-(screen.width*0.72))}/>
+        <Arrow click={() => scroll2(-(screen.width*0.7))}/>
       </div>
       <div className='projects' ref={ref2}>
         <div>
@@ -164,13 +168,15 @@ export default function Home() {
         </div>
       </div>
       <div className='arrow-right'>
-        <Arrow src='/next.png' click={() => scroll2((screen.width*0.72))}/>
+        <Arrow src='/next.png' click={() => scroll2((screen.width*0.7))}/>
       </div>
     </div>
 
     <div className='contactSec'>
       <SecTitle title='Want to get in touch?' text='It is a pleasure to have a chance to work with different people. I am always open to any opportunities.'/>
-      <Button/>
+      <div className='contactButton'>
+        <Button/>
+      </div>
     </div>
 
     <Footer/>
