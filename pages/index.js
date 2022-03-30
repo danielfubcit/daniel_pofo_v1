@@ -17,7 +17,6 @@ const HomeCont = styled.div`
   display: flex;
   flex-direction: column;
   height: 100vh;
-  font-family: 'Poppins', sans-serif;
 
   .hero{
     display: flex;
@@ -90,11 +89,7 @@ export default function Home() {
     <Head>
       <title>Daniel Fu | Front-End Developer | BCIT D3 Web Development 2022</title>
       <link rel="shortcut icon" href="/Daniel_with_laptop.png" />
-      <link
-        href="https://fonts.googleapis.com/css2?family=Poppins&display=optional"
-        rel="stylesheet"
-      />
-      </Head>
+    </Head>
 
     <NavBar/>
 
@@ -132,9 +127,17 @@ export default function Home() {
 
     <div className='projects-sec'>
       <div className='arrow-left'>
-        <Arrow click={() => scroll(-(screen.width*0.7))}/>
+        <Arrow click={() => scroll(-(screen.width*2/3))}/>
       </div>
       <div className='projects' ref={ref}>
+        <div>
+        <Project link='https://cinemagic-coral.vercel.app/' 
+          projectlink='/project/cinemagic' 
+          butText="View App"
+          src='/cinemagic_app.png' 
+          width='300px' 
+          title='Cinemagic App'/>
+        </div>
         <div>
         <Project src='/reshareWeb.png' width='300px'/>
         </div>
@@ -148,11 +151,11 @@ export default function Home() {
         </div>
       </div>
       <div className='arrow-right'>
-        <Arrow src='/next.png' click={() => scroll((screen.width*0.7))}/>
+        <Arrow src='/next.png' click={() => scroll((screen.width*2/3))}/>
       </div>
     </div>
 
-    <SecTitle title='UX/UI Design' text='Checkout my design projects down below.'/>
+    {/* <SecTitle title='UX/UI Design' text='Checkout my design projects down below.'/>
 
     <div className='projects-sec'>
       <div className='arrow-left'>
@@ -179,7 +182,7 @@ export default function Home() {
       <div className='arrow-right'>
         <Arrow src='/next.png' click={() => scroll2((screen.width*0.7))}/>
       </div>
-    </div>
+    </div> */}
 
     <div className='contactSec'>
       <SecTitle title='Want to get in touch?' text='It is a pleasure to have a chance to work with different people. I am always open to any opportunities.'/>

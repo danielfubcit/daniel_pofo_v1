@@ -42,7 +42,8 @@ const RightText = styled.text`
 const ProjectButton = ({
     backText="Home",
     backLink=`/`,
-    nextLink=`/project/co2Calculator`
+    nextLink=`/project/co2Calculator`,
+    nextText="Next Project"
 }) => {
     const r = useRouter (); 
     return <Cont>
@@ -51,7 +52,7 @@ const ProjectButton = ({
             <LeftText>{backText}</LeftText>
         </LeftButton>
         <RightButton>
-            <RightText>Next Project</RightText>
+            <RightText>{nextText}</RightText>
             <Arrow src='/next.png' click={()=>r.push(nextLink)}/>
         </RightButton>
     </Cont>

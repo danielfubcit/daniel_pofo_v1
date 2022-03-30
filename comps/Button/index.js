@@ -26,19 +26,19 @@ const ButtonText = styled.text`
 `
 
 const Button = ({
-    link="mailto:danielfuyj@outlook.com",
-    text="Contact me",
-    target="_blank"
+    link = "mailto:danielfuyj@outlook.com",
+    text = "Contact me",
+    target = "_blank"
 }) => {
-    return <Cont>
-        <Link href={link}>
-            <a target={target}>
+    return <Link href={link}>
+        <a target={target}>
+            <Cont>
                 <ButtonCont>
                     <ButtonText>{text}</ButtonText>
                 </ButtonCont>
-            </a>
-        </Link>
-    </Cont>
+            </Cont>
+        </a>
+    </Link>
 }
 
 export default Button;

@@ -55,8 +55,8 @@ const HeroImages = ({
                 <HeroImage src={src5}/>
             </Items>
             <ArrowCont>
-                <Arrow click={() => scroll(-(screen.width*0.5))}/>
-                <Arrow click={() => scroll((screen.width*0.5))} src='/next.png'/>
+                <Arrow click={() => scroll(-(screen.width*0.6))}/>
+                <Arrow click={() => scroll((screen.width*0.6))} src='/next.png'/>
             </ArrowCont>
         </HeroImageCont>
     </Cont>
