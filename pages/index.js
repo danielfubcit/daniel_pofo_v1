@@ -127,7 +127,7 @@ export default function Home() {
 
     <div className='projects-sec'>
       <div className='arrow-left'>
-        <Arrow click={() => scroll(-(screen.width*2/3))}/>
+        <Arrow click={() => scroll(-(screen.width*0.73))}/>
       </div>
       <div className='projects' ref={ref}>
         <div>
@@ -151,7 +151,7 @@ export default function Home() {
         </div>
       </div>
       <div className='arrow-right'>
-        <Arrow src='/next.png' click={() => scroll((screen.width*2/3))}/>
+        <Arrow src='/next.png' click={() => scroll((screen.width*0.73))}/>
       </div>
     </div>
 
