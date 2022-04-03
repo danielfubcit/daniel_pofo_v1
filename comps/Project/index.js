@@ -12,12 +12,21 @@ const Cont = styled.div`
     justify-content: space-evenly;
     height: 400px;
     width: 72vw;
+
+    @media (max-width:450px) {
+        flex-wrap: wrap;
+        height: 280px;
+    }
 `;
 
 const Left = styled.div`
     display: flex;
     justify-content: center;
     width:350px;
+
+    @media (max-width:450px) {
+        width:auto;
+    }
 `
 
 const Right = styled.div`
@@ -28,12 +37,22 @@ const Right = styled.div`
     height: 400px;
     text-align: left;
     width: 400px;
+
+    @media (max-width:450px) {
+        height: auto;
+        width:auto;
+    }
 `
 
 const Title = styled.text`
     font-weight: bold;
     font-size: 24px;
     line-height: 44px;
+
+    @media (max-width:450px) {
+        font-size: 16px;
+        line-height: 24px;
+    }
 `
 
 const ButtonCont = styled.div`
@@ -41,6 +60,11 @@ const ButtonCont = styled.div`
     justify-content: space-around;
     width:310px;
     margin-top: 10px;
+
+    @media (max-width:450px) {
+        justify-content: space-around;
+        width:220px;
+    }
 `
 
 const Project = ({

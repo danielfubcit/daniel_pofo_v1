@@ -13,6 +13,11 @@ const Title = styled.text`
     font-weight: bold;
     font-size: 32px;
     line-height: 48px;
+
+    @media (max-width:450px) {
+       font-size: 20px;
+       line-height: 10px;
+    }
 `
 
 const Text = styled.text`
@@ -20,6 +25,11 @@ const Text = styled.text`
     margin-top: 20px;
     font-size: 16px;
     line-height: 27px;
+
+    @media (max-width:450px) {
+       font-size: 12px;
+       width: 350px;
+    }
 `
 
 const SecTitle = ({

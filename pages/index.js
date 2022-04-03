@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import styled from 'styled-components';
-import React, {useState, useRef}  from 'react';
+import React, {useState, useRef, useEffect}  from 'react';
 import NavBar from '@/comps/NavBar';
 import TopTitle from '@/comps/TopTitle';
 import ImageUI from '@/comps/ImageUI';
@@ -11,6 +11,7 @@ import Project from '@/comps/Project';
 import Button from '@/comps/Button';
 import Footer from '@/comps/Footer';
 import Arrow from '@/comps/Arrow';
+
 
 const HomeCont = styled.div`
   margin:0;
@@ -25,12 +26,23 @@ const HomeCont = styled.div`
     align-items: center;
     margin-top: 50px;
     margin-bottom: 50px;
+
+    @media (max-width:450px) {
+      flex-direction: column-reverse;
+      margin-top: 80px;
+      margin-bottom: 30px;
+    }
   }
 
   .cardSec{
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
+
+    @media (max-width:450px) {
+      flex-wrap: wrap;
+      gap: 12px;
+    }
   }
 
   .projects-sec{
@@ -65,10 +77,20 @@ const HomeCont = styled.div`
     align-items: center;
     margin-top: 80px;
     margin-bottom: 80px;
+
+    @media (max-width:450px) {
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
   }
 
   .contactButton{
     margin-top: 30px;
+
+    @media (max-width:450px) {
+      margin-top: 20px;
+      margin-bottom: 40px;
+    }
   }
 `;
 
@@ -85,7 +107,38 @@ export default function Home() {
     ref2.current.scrollLeft += scrollOffset2;
   };
 
-  return <HomeCont>
+  const breakpoints = (width) => {
+    if(width < 450) {
+      return 'mb';
+    } else if(width >= 450) {
+      return 'pc';
+    } 
+  };
+  
+  const [breakpoint, setBreakpoint] = useState(() => breakpoints(typeof window !== 'undefined' && (window.innerWidth)));
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const calcInnerWidth = function() {
+        setBreakpoint(breakpoints(window.innerWidth))
+      }
+      window.addEventListener('resize', calcInnerWidth)
+      return () => window.removeEventListener('resize', calcInnerWidth)
+    }
+  }, [])
+
+  function onLoad(){
+    if(breakpoint == 'mb'){
+      console.log('mb')
+    }else{
+      console.log('pc')
+    }
+  }
+
+
+  return (
+  <HomeCont>
+    {onLoad()}
     <Head>
       <title>Daniel Fu | Front-End Developer | BCIT D3 Web Development 2022</title>
       <link rel="shortcut icon" href="/Daniel_with_laptop.png" />
@@ -127,7 +180,7 @@ export default function Home() {
 
     <div className='projects-sec'>
       <div className='arrow-left'>
-        <Arrow click={() => scroll(-(screen.width*0.73))}/>
+        <Arrow click={() => scroll(-(screen.width*0.74))}/>
       </div>
       <div className='projects' ref={ref}>
         <div>
@@ -135,23 +188,26 @@ export default function Home() {
           projectlink='/project/cinemagic' 
           butText="View App"
           src='/cinemagic_app.png' 
-          width='300px' 
+          width={breakpoint === "pc" ? "300px" : "180px"} 
           title='Cinemagic App'/>
         </div>
         <div>
-        <Project src='/reshareWeb.png' width='300px'/>
+        <Project 
+          src='/reshareWeb.png' 
+          width={breakpoint === "pc" ? "300px" : "180px"} 
+        />
         </div>
         <div>
         <Project link='https://mdia-2109-final.vercel.app/' 
           projectlink='/project/co2Calculator' 
           butText="View App"
           src='/co2_app.png' 
-          width='300px' 
+          width={breakpoint === "pc" ? "300px" : "180px"}  
           title='CO2 Calculator App'/>
         </div>
       </div>
       <div className='arrow-right'>
-        <Arrow src='/next.png' click={() => scroll((screen.width*0.73))}/>
+        <Arrow src='/next.png' click={() => scroll((screen.width*0.74))}/>
       </div>
     </div>
 
@@ -193,4 +249,5 @@ export default function Home() {
 
     <Footer/>
   </HomeCont>
+  )
 }

@@ -8,6 +8,10 @@ const Cont = styled.div`
     width: 550px;
     height: auto;
     color: #202020;
+
+    @media (max-width:450px) {
+        width:375px
+    }
 `;
 
 const Top = styled.div`
@@ -16,18 +20,28 @@ const Top = styled.div`
     font-weight: bold;
     font-size: 48px;
     text-align: center;
+
+    @media (max-width:450px) {
+        font-size: 24px;
+    }
 `
 
 const Name = styled.text`
     font-style: italic;
-    font-size: 48px;
 `
 
 const Title = styled.text``
 
-const Bot = styled.text`
+const Bot = styled.div`
     font-size: 16px;
     margin-top: 20px;
+
+    @media (max-width:450px) {
+        font-size: 12px;
+        width: 250px;
+        word-wrap: break-word;
+        text-align: center;
+    }
 `
 
 const TopTitle = ({

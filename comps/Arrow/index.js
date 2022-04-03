@@ -9,6 +9,10 @@ const Cont = styled.div`
 const ArrowImage = styled.img`
     width: ${props=>props.width};
     height: auto;;
+
+    @media (max-width:450px) {
+        width: 30px;
+    }
 `
 
 const Arrow = ({

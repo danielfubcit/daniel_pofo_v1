@@ -15,17 +15,30 @@ const IntroSec = styled.div`
     text-align: center;
     margin-top: 40px;
     margin-bottom: 180px;
+
+    @media (max-width:450px) {
+        width: 330px;
+        margin-bottom: 110px;
+    }
 `
 
 const Title = styled.text`
     font-weight: bold;
     font-size: 20px;
     margin-bottom: 20px;
+
+    @media (max-width:450px) {
+        font-size: 16px;
+    }
 `
 
 const Text = styled.text`
     font-size: 16px;
     line-height: 24px;
+
+    @media (max-width:450px) {
+        font-size: 12px;
+    }
 `
 
 const Intro = ({

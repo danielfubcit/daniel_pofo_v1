@@ -4,6 +4,10 @@ import Icon from '../Icon';
 
 const Cont = styled.div`
     display: flex;
+
+    @media (max-width:450px) {
+        display: none;
+    }
 `;
 
 const Background = styled.div`

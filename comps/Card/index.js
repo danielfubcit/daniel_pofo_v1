@@ -15,7 +15,10 @@ const Cont = styled.div`
     text-align: center;
     font-size: 14px;
     position: relative;
-    top:-120px;
+    
+    @media (max-width:450px) {
+        top:-60px;
+    }
 `;
 
 const Top = styled.div`
@@ -28,6 +31,10 @@ const MainTitle = styled.text`
     font-size: 20px;
     line-height: 30px;
     margin-bottom: 20px;
+
+    @media (max-width:450px) {
+        font-size: 16px;
+    }
 `
 
 const Bot = styled.div`
@@ -35,11 +42,19 @@ const Bot = styled.div`
     flex-direction: column;
     width: 260px;
     margin-bottom: 30px;
+
+    @media (max-width:450px) {
+        width: 220px;
+    }
 `
 
 const MainText = styled.text`
     line-height: 24px;
     margin-bottom: 20px;
+
+    @media (max-width:450px) {
+        font-size: 12px;
+    }
 `
 
 const SubTitle = styled.text`
@@ -47,10 +62,18 @@ const SubTitle = styled.text`
     font-size: 16px;
     color: #FFDF6C;
     margin-bottom: 20px;
+
+    @media (max-width:450px) {
+        font-size: 14px;
+    }
 `
 
 const SubText = styled.text`
     line-height: 24px;
+
+    @media (max-width:450px) {
+        font-size: 12px;
+    }
 `
 
 const Card = ({
