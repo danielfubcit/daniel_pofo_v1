@@ -28,6 +28,10 @@ const Para = styled.div`
     width: 80vw;
     font-size: 16px;
     margin-bottom: 20px;
+
+    @media (max-width:450px) {
+      font-size: 14px;
+    }
 `
 
 const SubTitle = styled.h2`
