@@ -73,7 +73,7 @@ const Project = ({
     iconwidth="300px",
     target='_blank',
     link='https://reshare-gold.vercel.app/',
-    projectlink='project/reshare',
+    projectlink='/project/reshare',
     butText='View Site'
 }) => {
     return <Cont>
