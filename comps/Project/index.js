@@ -70,7 +70,7 @@ const ButtonCont = styled.div`
 const Project = ({
     title='Reshare Website & App',
     src,
-    iconwidth="300px",
+    iconWidth="300px",
     target='_blank',
     link='https://reshare-gold.vercel.app/',
     projectlink='/project/reshare',
@@ -78,7 +78,7 @@ const Project = ({
 }) => {
     return <Cont>
         <Left>
-            <Icon src={src} width={iconwidth} link={link} target={target}/>
+            <Icon src={src} width={iconWidth} link={link} target={target}/>
         </Left>
         <Right>
             <Title>{title}</Title>

@@ -179,13 +179,13 @@ export default function Home() {
           projectlink='/project/cinemagic' 
           butText="View App"
           src='/cinemagic_app.png' 
-          width={breakpoint === "pc" ? "300px" : "180px"} 
+          iconWidth={breakpoint === "mb" ? "180px" : "300px"} 
           title='Cinemagic App'/>
         </div>
         <div>
         <Project 
           src='/reshareWeb.png' 
-          width={breakpoint === "pc" ? "300px" : "180px"} 
+          iconWidth={breakpoint === "mb" ? "180px" : "300px"} 
         />
         </div>
         <div>
@@ -193,7 +193,7 @@ export default function Home() {
           projectlink='/project/co2Calculator' 
           butText="View App"
           src='/co2_app.png' 
-          width={breakpoint === "pc" ? "300px" : "180px"}  
+          iconWidth={breakpoint === "mb" ? "180px" : "300px"}  
           title='CO2 Calculator App'/>
         </div>
       </div>
