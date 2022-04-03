@@ -98,7 +98,7 @@ export default function ReshareProject() {
         text2='The Reshare website showcase the project process, team members, and marketing products.'
         text3='This app is developed by using React, Expo JS, Google Firebase, and Figma.'
         />
-        <ProjectCard mainTitle='Problem & Solution'/>
+        <ProjectCard mainTitle='Problem &amp; Solution'/>
     </div>
 
     <div className='direction'>

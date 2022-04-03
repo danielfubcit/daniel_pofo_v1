@@ -24,7 +24,7 @@ const HeroImage = styled.img`
     object-fit: fill;
 
     @media (max-width:450px) {
-        height: 260px;
+        height: 290px;
     }
 `
 
@@ -37,7 +37,7 @@ const ArrowCont = styled.div`
     align-items: center;
 
     @media (max-width:450px) {
-        height: 260px;
+        height: 290px;
     }
 `
 

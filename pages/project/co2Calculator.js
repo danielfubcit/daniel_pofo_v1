@@ -94,7 +94,7 @@ export default function ReshareProject() {
 
     <div className='cardSec'>
         <ProjectCard 
-        text='Project Manager & Front-end Developer'
+        text='Project Manager &amp; Front-end Developer'
         text2='Building styled-components and using Next JS to build the app'
         text3='UX/UI design on Figma'
         />
@@ -104,7 +104,7 @@ export default function ReshareProject() {
         text2='This app is developed by using React, Next JS, and Figma.'
         text3=''
         />
-        <ProjectCard mainTitle='Problem & Solution'
+        <ProjectCard mainTitle='Problem &amp; Solution'
         text="Carbon dioxide emissions are the primary driver of global climate change."
         text2="These emissions are expelled from vehicles, and collectively cars and trucks account for nearly one-fifth of all Canada emissions."
         text3='This app recognize the ways that cars have contributed to carbon emissions and what this means for every driver.'

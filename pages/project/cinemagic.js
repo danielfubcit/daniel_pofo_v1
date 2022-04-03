@@ -94,7 +94,7 @@ export default function CinemagicProject() {
 
     <div className='cardSec'>
         <ProjectCard 
-        text='Project Manager & Front-end Developer'
+        text='Project Manager &amp; Front-end Developer'
         text2='Building styled-components and using Next JS to build the app'
         text3='Using Socket.IO to build the live chat'
         text4='Using Express, MongoDB, and Firebase to build the login system'
@@ -105,7 +105,7 @@ export default function CinemagicProject() {
         text2='Users can choose between light mode to dark mode and grid view to list view in the setting page.'
         text3='Also, users can click on each movie to learn more about the movie rating movie time, and users can save the movie they like to their favourite library for future reference.'
         />
-        <ProjectCard mainTitle='Problem & Solution'
+        <ProjectCard mainTitle='Problem &amp; Solution'
         text='Many movies are constantly being released every year, and people can not decide which movies to watch first.'
         text2='The solution is to design a movie recommender system to narrow their likings by using search functions and filters.'
         text3='Instead of spending a lot of time searching on each website, this application will help shorten the search time for users. The application recommend all related movies from old to new.'
