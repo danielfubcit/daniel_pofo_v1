@@ -17,6 +17,10 @@ const Cont = styled.div`
     font-size: 14px;
     position: relative;
     top:-120px;
+
+    @media (max-width:450px) {
+        top:-60px;
+    }
 `;
 
 const Top = styled.div`
@@ -29,6 +33,10 @@ const MainTitle = styled.text`
     font-weight: bold;
     font-size: 20px;
     line-height: 30px;
+
+    @media (max-width:450px) {
+        font-size: 16px;
+    }
 `
 
 const SubTitle = styled.text`

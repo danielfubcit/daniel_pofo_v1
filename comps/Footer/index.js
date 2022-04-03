@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Icon from '../Icon';
+import Link from 'next/dist/client/link';
 
 const Cont = styled.div`
     display: flex;
@@ -15,7 +16,7 @@ const Background = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 200px;
+    height: 170px;
     width: 100%;
     background-color: #FFDF6C;
     text-align: center;
@@ -40,7 +41,7 @@ const IconSec = styled.div`
     flex-direction: row;
     width: 220px;
     justify-content: space-between;
-    margin: 20px 0px;
+    margin-top: 20px;
 `
 
 const Footer = ({
@@ -49,7 +50,9 @@ const Footer = ({
 }) => {
     return <Cont>
         <Background>
-            <Title>Daniel Fu</Title>
+            <Link href='/'>
+                <Title>Daniel Fu</Title>
+            </Link>
             <Subtitle>Front-end Developer</Subtitle>
             <IconSec>
                 <Icon src={src} width={width} link='https://github.com/danielfubcit' target='_blank'/>

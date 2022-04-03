@@ -2,13 +2,14 @@ import Head from 'next/head';
 import styled from 'styled-components';
 import React, {useState, useRef}  from 'react';
 import NavBar from '@/comps/NavBar';
-import Intro from '@/comps/Intro';
+import Block from '@/comps/Block';
 import SecTitle from '@/comps/SecTitle';
 import Footer from '@/comps/Footer';
 import HeroImages from '@/comps/HeroImages';
 import ProjectCard from '@/comps/ProjectCard'
 import ProjectButton from '@/comps/ProjectButton';
 import Icon from '@/comps/Icon';
+import Footer2 from '@/comps/Footer2';
 
 const ProjectsCont = styled.div`
   margin:0;
@@ -19,6 +20,11 @@ const ProjectsCont = styled.div`
   .margin{
     margin-top: 20px;
     margin-bottom: 20px;
+
+    @media (max-width:450px) {
+      margin-top: 90px;
+      margin-bottom: 15px;
+    }
   }
 
   .viewsite{
@@ -37,10 +43,19 @@ const ProjectsCont = styled.div`
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
+
+    @media (max-width:450px) {
+      flex-wrap: wrap;
+      gap:12px;
+    }
   }
 
   .direction{
     margin-bottom: 50px;
+
+    @media (max-width:450px) {
+      margin-bottom: 20px;
+    }
   }
 
 `;
@@ -69,12 +84,7 @@ export default function ReshareProject() {
 
     <HeroImages/>
 
-    <Intro 
-    title='' 
-    info=''
-    info2=''
-    info3=''
-    />
+    <Block/>
 
     <div className='cardSec'>
         <ProjectCard 
@@ -98,5 +108,6 @@ export default function ReshareProject() {
     </div>
 
     <Footer/>
+    <Footer2/>
   </ProjectsCont>
 }

@@ -28,6 +28,11 @@ const LeftText = styled.text`
     line-height: 48px;
     text-align: center;
     margin-left: 20px;
+
+    @media (max-width:450px) {
+        font-size: 14px;
+        margin-left: 10px;
+    }
 `
 
 const RightText = styled.text`
@@ -37,6 +42,11 @@ const RightText = styled.text`
     line-height: 48px;
     text-align: center;
     margin-right: 20px;
+
+    @media (max-width:450px) {
+        font-size: 14px;
+        margin-right: 10px;
+    }
 `
 
 const ProjectButton = ({

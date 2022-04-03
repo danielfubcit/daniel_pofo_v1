@@ -11,6 +11,7 @@ import Project from '@/comps/Project';
 import Button from '@/comps/Button';
 import Footer from '@/comps/Footer';
 import Arrow from '@/comps/Arrow';
+import Footer2 from '@/comps/Footer2';
 
 
 const HomeCont = styled.div`
@@ -79,8 +80,8 @@ const HomeCont = styled.div`
     margin-bottom: 80px;
 
     @media (max-width:450px) {
-      margin-top: 40px;
-      margin-bottom: 40px;
+      margin-top: 70px;
+      margin-bottom: 0px;
     }
   }
 
@@ -127,18 +128,8 @@ export default function Home() {
     }
   }, [])
 
-  function onLoad(){
-    if(breakpoint == 'mb'){
-      console.log('mb')
-    }else{
-      console.log('pc')
-    }
-  }
-
-
   return (
   <HomeCont>
-    {onLoad()}
     <Head>
       <title>Daniel Fu | Front-End Developer | BCIT D3 Web Development 2022</title>
       <link rel="shortcut icon" href="/Daniel_with_laptop.png" />
@@ -180,7 +171,7 @@ export default function Home() {
 
     <div className='projects-sec'>
       <div className='arrow-left'>
-        <Arrow click={() => scroll(-(screen.width*0.74))}/>
+        <Arrow click={() => scroll(-(screen.width*0.73))}/>
       </div>
       <div className='projects' ref={ref}>
         <div>
@@ -207,7 +198,7 @@ export default function Home() {
         </div>
       </div>
       <div className='arrow-right'>
-        <Arrow src='/next.png' click={() => scroll((screen.width*0.74))}/>
+        <Arrow src='/next.png' click={() => scroll((screen.width*0.73))}/>
       </div>
     </div>
 
@@ -248,6 +239,7 @@ export default function Home() {
     </div>
 
     <Footer/>
+    <Footer2/>
   </HomeCont>
   )
 }

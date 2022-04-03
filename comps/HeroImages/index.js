@@ -22,6 +22,10 @@ const Items = styled.div`
 const HeroImage = styled.img`
     height: 420px;
     object-fit: fill;
+
+    @media (max-width:450px) {
+        height: 260px;
+    }
 `
 
 const ArrowCont = styled.div`
@@ -31,6 +35,10 @@ const ArrowCont = styled.div`
     height: 420px;
     justify-content: space-between;
     align-items: center;
+
+    @media (max-width:450px) {
+        height: 260px;
+    }
 `
 
 const HeroImages = ({

@@ -15,6 +15,7 @@ const Cont = styled.div`
     text-align: center;
     font-size: 14px;
     position: relative;
+    top:-120px;
     
     @media (max-width:450px) {
         top:-60px;
