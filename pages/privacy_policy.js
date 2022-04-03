@@ -59,7 +59,7 @@ export default function PrivacyPolicy() {
         <Para>(A) Your voluntarily provided personal information. (B) Anonymous information about your visit.</Para>
         <Para>A. Your Personal Information:</Para>
         <Para>During normal Web site usage, you can visit this site without communicating any personalinformation. However, to make use of certain features on this site, such as gift certificates,promotions, subscriptions or newsletters, users may be asked to register with Daniel Fu Web site. As part of this voluntary registration, Daniel Fu may request contact information (such as name, mailing address, e-mail address, etc.) andother data required for operating these services. The only way we can collect personal informationfrom you is if you voluntarily provide it. By voluntarily providing this personal information to us bysending us a comment or suggestion, by entering a contest that is posted on this Web site, you willbe consenting to the collection, use and distribution of your personal information by Daniel Fu for the purposes set out. You are under no obligation to provide us withpersonal information and can access and enjoy many parts of Daniel Fu Web site without providing us any personal information. Among other things, the following is arepresentative list of reasons we may ask for your personal information:</Para>
-        <ul style={{width: "80vw"}}>
+        <ul style={{width: "80vw", fontSize: "14px"}}>
             <li>To run contests, select entrants, and choose prize winners;</li>
             <li>To respond to your questions or the comments you e-mail to us;</li>
             <li>To provide you with newsletters, bulletins or other information about our design orcommunication activities.</li>
@@ -68,7 +68,7 @@ export default function PrivacyPolicy() {
         <Para>B. Anonymous Information About Your Visit:</Para>
         <Para>When you visit this site, information about your visit (e.g. how you navigate the site) may becollected and stored. This information may include the length of your visit, the date and time ofyour visit, the pages you look at and the sites you visit before and after leaving this site. It doesnot include personally identifiable information such as your name, mailing or e-mail address ortelephone number. We use this non-identifiable and aggregate information to better design thisWeb site and develop an efficient Web marketing plan. We also may share this information with ourWeb designer, board of directors and sponsors.</Para>
         <Para>Daniel Fu may collect the following non-identifiable information whenyou visit this Web site:</Para>
-        <ul style={{width: "80vw"}}>
+        <ul style={{width: "80vw", fontSize: "14px"}}>
             <li>Your Internet Service Provider (ISP)</li>
             <li>Time of your visit</li>
             <li>Pages you visited</li>
