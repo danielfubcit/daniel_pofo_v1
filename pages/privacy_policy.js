@@ -48,7 +48,7 @@ export default function PrivacyPolicy() {
       <Main>
         <h1>PRIVACY POLICY</h1>
         <Para>This policy applies to Daniel Fu Web site only. It is designed to informyou of how and why Daniel Fu gathers personal and non-personalinformation about you. This policy complies with provisions of the British Columbia Freedom of Information and Protection of Privacy Act.</Para>
-        <Para>This may be Web site connected by "hyperlinks" to other Web sites. We are not responsible in anyway for the privacy practices on other Web sites and suggest that you review the privacy policieson those linked Web sites before using them.</Para>
+        <Para>This may be Web site connected by &quot;hyperlinks&quot; to other Web sites. We are not responsible in anyway for the privacy practices on other Web sites and suggest that you review the privacy policieson those linked Web sites before using them.</Para>
         <Para>We are accountable for this Privacy Policy and these practices on this Web site, including thePrivacy Code set out below. If you have any questions or concerns regarding the privacy practiceson this Web site, please e-mail us.</Para>
         <SubTitle>What Information Is Collected?</SubTitle>
         <Para>Daniel Fu collects two kinds of information from this Web site.</Para>
